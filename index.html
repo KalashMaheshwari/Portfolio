@@ -1800,7 +1800,7 @@
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
-            
+
             .project-image {
                 height: 200px;
             }
@@ -1829,7 +1829,8 @@
             }
 
             .skill-description {
-                display: none; /* Hide description on mobile for a cleaner look */
+                display: none;
+                /* Hide description on mobile for a cleaner look */
             }
 
             .contact-container {
@@ -1854,21 +1855,27 @@
             .contact-card h3 {
                 font-size: 2rem;
             }
-            
+
             /* === FIX FOR MOBILE CONTACT & FOOTER === */
             .contact-value {
-                word-break: break-word; /* Prevents long text like emails from overflowing its container */
+                word-break: break-word;
+                /* Prevents long text like emails from overflowing its container */
             }
 
             .social-links {
-                justify-content: center; /* Centers your social media icons */
+                justify-content: center;
+                /* Centers your social media icons */
             }
 
             .footer-links {
-                flex-wrap: wrap; /* Allows the footer links to wrap onto a new line */
-                gap: 1rem 1.5rem; /* Adjusts the vertical and horizontal spacing */
-                padding: 0 1rem; /* Adds a bit of space so links don't touch the screen edges */
+                flex-wrap: wrap;
+                /* Allows the footer links to wrap onto a new line */
+                gap: 1rem 1.5rem;
+                /* Adjusts the vertical and horizontal spacing */
+                padding: 0 1rem;
+                /* Adds a bit of space so links don't touch the screen edges */
             }
+
             /* === END OF FIX === */
 
             /* === MOBILE OPTIMIZATIONS END === */
@@ -1876,17 +1883,25 @@
 
         /* Disable hover effects on touch devices */
         @media (hover: none) and (pointer: coarse) {
-            .btn-primary:hover, .stat-card:hover, .skill-card:hover, .social-link:hover, .tech-tag:hover {
+
+            .btn-primary:hover,
+            .stat-card:hover,
+            .skill-card:hover,
+            .social-link:hover,
+            .tech-tag:hover {
                 transform: none;
                 box-shadow: none;
             }
+
             .project-card:hover .project-image img {
                 transform: none;
             }
+
             .project-link:hover {
                 background: rgba(255, 255, 255, 0.1);
                 transform: none;
             }
+
             .timeline-item-h:hover {
                 box-shadow: none;
             }
@@ -1955,8 +1970,7 @@
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
-                    <img src="photo.jpg"
-                        alt="A photo of Kalash Maheshwari" class="profile-photo"
+                    <img src="photo.jpg" alt="A photo of Kalash Maheshwari" class="profile-photo"
                         onerror="this.onerror=null;this.src='https://placehold.co/400x400/0a0a0a/ffffff?text=Image+Error';">
                 </div>
             </div>
@@ -2003,7 +2017,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="horizontal-timeline-wrapper">
                     <h3 class="category-title" style="font-size: 1.8rem; margin-bottom: 2rem;">My Journey</h3>
                     <div class="horizontal-timeline">
@@ -2192,8 +2206,10 @@
                                 <div class="project-header">
                                     <h3>E-commerce Platform</h3>
                                     <div class="project-links">
-                                        <a href="#" class="project-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="#" class="project-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="project-link" aria-label="Live Demo"><i
+                                                class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="project-link" aria-label="GitHub Repository"><i
+                                                class="fab fa-github"></i></a>
                                     </div>
                                 </div>
                                 <p>Full-stack e-commerce solution built with PHP and MySQL. Features include user
@@ -2217,8 +2233,10 @@
                                 <div class="project-header">
                                     <h3>Task Management System</h3>
                                     <div class="project-links">
-                                        <a href="#" class="project-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="#" class="project-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="project-link" aria-label="Live Demo"><i
+                                                class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="project-link" aria-label="GitHub Repository"><i
+                                                class="fab fa-github"></i></a>
                                     </div>
                                 </div>
                                 <p>Collaborative task management application with real-time updates, drag-and-drop
@@ -2242,8 +2260,10 @@
                                 <div class="project-header">
                                     <h3>Interactive Portfolio</h3>
                                     <div class="project-links">
-                                        <a href="#" class="project-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="#" class="project-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="project-link" aria-label="Live Demo"><i
+                                                class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="project-link" aria-label="GitHub Repository"><i
+                                                class="fab fa-github"></i></a>
                                     </div>
                                 </div>
                                 <p>Modern portfolio website featuring interactive animations, smooth scrolling, and
@@ -2260,7 +2280,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- NEW Experience Section -->
         <section id="experience" class="experience">
             <div class="container">
@@ -2268,18 +2288,19 @@
                 <p class="section-subtitle">My professional journey and contributions</p>
                 <div class="experience-card">
                     <div class="experience-certificate">
-                        <img src="Houston Certificate.jpg"
-                                alt="Internship Certificate from Houston International Foods"
-                                id="certificate-image"
-                                onerror="this.onerror=null;this.src='https://placehold.co/400x560/0a0a0a/ffffff?text=Certificate';">
+                        <img src="Houston Certificate.jpg" alt="Internship Certificate from Houston International Foods"
+                            id="certificate-image"
+                            onerror="this.onerror=null;this.src='https://placehold.co/400x560/0a0a0a/ffffff?text=Certificate';">
                     </div>
                     <div class="experience-details">
                         <h3>Full-stack Web Developer</h3>
                         <p class="company">Houston International Foods Pvt. Ltd.</p>
                         <p class="duration">June 2025 - July 2025</p>
                         <ul>
-                            <li>Developed and maintained features for a client-facing website using HTML, CSS, and JavaScript.</li>
-                            <li>Contributed to both front-end and back-end development, ensuring a seamless user experience.</li>
+                            <li>Developed and maintained features for a client-facing website using HTML, CSS, and
+                                JavaScript.</li>
+                            <li>Contributed to both front-end and back-end development, ensuring a seamless user
+                                experience.</li>
                             <li>Praised for being a knowledgeable, problem-solving, and communicative team member.</li>
                             <li>Demonstrated great dedication, punctuality, and a helpful attitude within the team.</li>
                         </ul>
@@ -2326,10 +2347,12 @@
                             </div>
 
                             <div class="social-links">
-                                <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                <a href="#" class="social-link" aria-label="LinkedIn"><i
-                                        class="fab fa-linkedin"></i></a>
-                                <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="https://github.com/KalashMaheshwari" class="social-link" aria-label="GitHub"><i
+                                        class="fab fa-github"></i></a>
+                                <a href="www.linkedin.com/in/kalash-maheshwari-7143b0372" class="social-link"
+                                    aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/klshh.ig/" class="social-link"
+                                    aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -2373,7 +2396,7 @@
             </div>
         </footer>
     </div>
-    
+
     <!-- Certificate Modal -->
     <div id="certificate-modal" class="modal">
         <span class="modal-close">&times;</span>
@@ -2481,7 +2504,7 @@
                     ease: 'power3.out'
                 });
 
-                const heroTl = gsap.timeline({delay: 0.1});
+                const heroTl = gsap.timeline({ delay: 0.1 });
                 heroTl.to('.hero-badge', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' })
                     .to('.hero-greeting', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '-=0.5')
                     .to('.hero-name-line', { opacity: 1, y: 0, stagger: 0.08, duration: 0.6, ease: 'power3.out' }, '-=0.5')
@@ -2559,7 +2582,7 @@
             if (window.innerWidth <= 768) {
                 hamburger.style.display = 'flex';
             } else {
-                 hamburger.style.display = 'none';
+                hamburger.style.display = 'none';
             }
 
             window.addEventListener('scroll', () => {
@@ -2660,7 +2683,7 @@
                     start: 'top 80%', once: true,
                     onEnter: () => gsap.to('.about-content-wrapper', { opacity: 1, y: 0, duration: 0.7 }),
                 });
-                
+
                 ScrollTrigger.create({
                     trigger: '.horizontal-timeline-wrapper',
                     start: 'top 80%', once: true,
@@ -2681,7 +2704,7 @@
                         }
                     });
                 });
-                
+
                 ScrollTrigger.batch('.skill-card, .project-card, .experience-card, .contact-info, .contact-form', {
                     onEnter: batch => gsap.to(batch, { opacity: 1, y: 0, rotateX: 0, stagger: 0.07, overwrite: 'auto', duration: 0.5 }),
                     start: 'top 85%', once: true
@@ -2762,7 +2785,7 @@
             if (heroNameLines.length > 0) {
                 heroNameLines.forEach(heroName => {
                     const text = heroName.textContent;
-                    heroName.innerHTML = ''; 
+                    heroName.innerHTML = '';
                     text.split('').forEach(char => {
                         const span = document.createElement('span');
                         span.innerHTML = char === ' ' ? '&nbsp;' : char;
@@ -2818,7 +2841,7 @@
                     card.style.setProperty('--spotlight-y', `${y}px`);
                 });
             });
-            
+
             // --- 3D TILT FOR TIMELINE CARDS (Desktop only) ---
             if (window.matchMedia('(pointer: fine)').matches) {
                 const timelineCards = document.querySelectorAll('.timeline-item-h');
@@ -2902,28 +2925,28 @@
                     });
                 });
             }
-            
+
             // --- Certificate Modal Logic ---
             const modal = document.getElementById("certificate-modal");
             const img = document.getElementById("certificate-image");
             const modalImg = document.getElementById("modal-image");
             const closeBtn = document.querySelector(".modal-close");
 
-            img.onclick = function(){
-              modal.style.display = "flex";
-              modalImg.src = this.src;
+            img.onclick = function () {
+                modal.style.display = "flex";
+                modalImg.src = this.src;
             }
 
-            closeBtn.onclick = function() {
-              modal.style.display = "none";
+            closeBtn.onclick = function () {
+                modal.style.display = "none";
             }
-            
-            modal.onclick = function(event) {
+
+            modal.onclick = function (event) {
                 if (event.target == modal) {
                     modal.style.display = "none";
                 }
             }
-            
+
         });
     </script>
 </body>
