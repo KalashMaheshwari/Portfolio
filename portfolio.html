@@ -669,7 +669,7 @@
         .about {
             background: var(--light-bg);
         }
-        
+
         .about-content-wrapper {
             max-width: 800px;
             margin: 0 auto 4rem auto;
@@ -759,7 +759,7 @@
             scrollbar-width: thin;
             perspective: 1000px;
         }
-        
+
         .horizontal-timeline::-webkit-scrollbar {
             height: 8px;
         }
@@ -773,7 +773,7 @@
             background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
             border-radius: 4px;
         }
-        
+
         .timeline-item-h {
             flex: 0 0 320px;
             margin-right: 2rem;
@@ -786,16 +786,16 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .timeline-item-h:last-child {
             margin-right: 0;
         }
-        
+
         .timeline-item-h:hover {
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
             border-color: rgba(255, 255, 255, 0.1);
         }
-        
+
         .timeline-dot {
             width: 50px;
             height: 50px;
@@ -1677,7 +1677,7 @@
             .hero-cta {
                 justify-content: center;
             }
-            
+
             .about-content-wrapper {
                 max-width: 100%;
             }
@@ -1909,8 +1909,7 @@
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
-                    <img src="photo.jpg"
-                        alt="A photo of Kalash Maheshwari" class="profile-photo"
+                    <img src="photo.jpg" alt="A photo of Kalash Maheshwari" class="profile-photo"
                         onerror="this.onerror=null;this.src='https://placehold.co/400x400/0a0a0a/ffffff?text=Image+Error';">
                 </div>
             </div>
@@ -1957,7 +1956,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="horizontal-timeline-wrapper">
                     <h3 class="category-title" style="font-size: 1.8rem; margin-bottom: 2rem;">My Journey</h3>
                     <div class="horizontal-timeline">
@@ -2220,7 +2219,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- NEW Experience Section -->
         <section id="experience" class="experience">
             <div class="container">
@@ -2228,18 +2227,19 @@
                 <p class="section-subtitle">My professional journey and contributions</p>
                 <div class="experience-card">
                     <div class="experience-certificate">
-                        <img src="Houston Certificate.jpg"
-                             alt="Internship Certificate from Houston International Foods"
-                             id="certificate-image"
-                             onerror="this.onerror=null;this.src='https://placehold.co/400x560/0a0a0a/ffffff?text=Certificate';">
+                        <img src="Houston Certificate.jpg" alt="Internship Certificate from Houston International Foods"
+                            id="certificate-image"
+                            onerror="this.onerror=null;this.src='https://placehold.co/400x560/0a0a0a/ffffff?text=Certificate';">
                     </div>
                     <div class="experience-details">
                         <h3>Full-stack Web Developer</h3>
                         <p class="company">Houston International Foods Pvt. Ltd.</p>
                         <p class="duration">June 2025 - July 2025</p>
                         <ul>
-                            <li>Developed and maintained features for a client-facing website using HTML, CSS, and JavaScript.</li>
-                            <li>Contributed to both front-end and back-end development, ensuring a seamless user experience.</li>
+                            <li>Developed and maintained features for a client-facing website using HTML, CSS, and
+                                JavaScript.</li>
+                            <li>Contributed to both front-end and back-end development, ensuring a seamless user
+                                experience.</li>
                             <li>Praised for being a knowledgeable, problem-solving, and communicative team member.</li>
                             <li>Demonstrated great dedication, punctuality, and a helpful attitude within the team.</li>
                         </ul>
@@ -2333,7 +2333,7 @@
             </div>
         </footer>
     </div>
-    
+
     <!-- Certificate Modal -->
     <div id="certificate-modal" class="modal">
         <span class="modal-close">&times;</span>
@@ -2441,7 +2441,7 @@
                     ease: 'power3.out'
                 });
 
-                const heroTl = gsap.timeline({delay: 0.1});
+                const heroTl = gsap.timeline({ delay: 0.1 });
                 heroTl.to('.hero-badge', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' })
                     .to('.hero-greeting', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '-=0.5')
                     .to('.hero-name-line', { opacity: 1, y: 0, stagger: 0.08, duration: 0.6, ease: 'power3.out' }, '-=0.5')
@@ -2613,7 +2613,7 @@
                     start: 'top 80%', once: true,
                     onEnter: () => gsap.to('.about-content-wrapper', { opacity: 1, y: 0, duration: 0.7 }),
                 });
-                
+
                 ScrollTrigger.create({
                     trigger: '.horizontal-timeline-wrapper',
                     start: 'top 80%', once: true,
@@ -2634,7 +2634,7 @@
                         }
                     });
                 });
-               
+
                 ScrollTrigger.batch('.skill-card, .project-card, .experience-card', {
                     onEnter: batch => gsap.to(batch, { opacity: 1, y: 0, rotateX: 0, stagger: 0.07, overwrite: 'auto', duration: 0.5 }),
                     start: 'top 85%', once: true
@@ -2724,7 +2724,7 @@
             if (heroNameLines.length > 0) {
                 heroNameLines.forEach(heroName => {
                     const text = heroName.textContent;
-                    heroName.innerHTML = ''; 
+                    heroName.innerHTML = '';
                     text.split('').forEach(char => {
                         const span = document.createElement('span');
                         span.innerHTML = char === ' ' ? '&nbsp;' : char;
@@ -2780,7 +2780,7 @@
                     card.style.setProperty('--spotlight-y', `${y}px`);
                 });
             });
-            
+
             // --- 3D TILT FOR TIMELINE CARDS ---
             const timelineCards = document.querySelectorAll('.timeline-item-h');
             timelineCards.forEach(card => {
@@ -2862,28 +2862,28 @@
                     });
                 });
             }
-            
+
             // --- Certificate Modal Logic ---
             const modal = document.getElementById("certificate-modal");
             const img = document.getElementById("certificate-image");
             const modalImg = document.getElementById("modal-image");
             const closeBtn = document.querySelector(".modal-close");
 
-            img.onclick = function(){
-              modal.style.display = "flex";
-              modalImg.src = this.src;
+            img.onclick = function () {
+                modal.style.display = "flex";
+                modalImg.src = this.src;
             }
 
-            closeBtn.onclick = function() {
-              modal.style.display = "none";
+            closeBtn.onclick = function () {
+                modal.style.display = "none";
             }
-            
-            modal.onclick = function(event) {
+
+            modal.onclick = function (event) {
                 if (event.target == modal) {
                     modal.style.display = "none";
                 }
             }
-            
+
         });
     </script>
 </body>
