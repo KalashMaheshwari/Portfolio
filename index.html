@@ -612,6 +612,20 @@
             transform: translateY(-3px) scale(1.02);
             box-shadow: 0 10px 30px rgba(99, 102, 241, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3);
         }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--primary-color);
+            box-shadow: none;
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+        }
 
         @keyframes fadeInUp {
             to {
@@ -1910,7 +1924,6 @@
 </head>
 
 <body>
-    <!-- Monochrome Landing Section -->
     <div class="landing-section" id="landing-section">
         <div class="landing-content">
             <h1 class="landing-title">
@@ -1922,7 +1935,6 @@
         <div class="scroll-indicator"></div>
     </div>
 
-    <!-- Main content wrapper -->
     <div class="main-content-wrapper">
         <nav class="navbar" id="navbar">
             <div class="nav-container">
@@ -1967,6 +1979,7 @@
                     </p>
                     <div class="hero-cta">
                         <a href="#contact" class="btn btn-primary">Let's Connect</a>
+                        <a href="Kalash Maheshwari CV.docx" class="btn btn-secondary" download>Download CV</a>
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
@@ -2281,7 +2294,6 @@
             </div>
         </section>
 
-        <!-- NEW Experience Section -->
         <section id="experience" class="experience">
             <div class="container">
                 <h2 class="section-title">Work Experience</h2>
@@ -2397,7 +2409,6 @@
         </footer>
     </div>
 
-    <!-- Certificate Modal -->
     <div id="certificate-modal" class="modal">
         <span class="modal-close">&times;</span>
         <img class="modal-content" id="modal-image">
@@ -2756,14 +2767,14 @@
 
                         const confetti = document.createElement('div');
                         confetti.style.cssText = `
-                            position: fixed;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            font-size: 100px;
-                            z-index: 9999;
-                            pointer-events: none;
-                        `;
+                                position: fixed;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                font-size: 100px;
+                                z-index: 9999;
+                                pointer-events: none;
+                            `;
                         confetti.textContent = '🎉';
                         document.body.appendChild(confetti);
 
